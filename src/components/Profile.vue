@@ -2,8 +2,15 @@
   <Header>Profile</Header>
 
   <div class="body">
-    <Label value="Name" htmlFor="name" />
-    <Input v-model:myValue="name" id="name" />
+    <div>
+      <Label value="Name" htmlFor="name" />
+      <Input v-model:myValue="name" id="name" />
+    </div>
+
+    <div>
+      <Label value="Nickname" htmlFor="nickname" />
+      <Input v-model:myValue="nickname" id="nickname" />
+    </div>
   </div>
 
   <div class="button-row">
@@ -31,11 +38,15 @@ export default defineComponent({
   data() {
     return {
       name: "",
+      nickname: "",
     }
   },
   methods: {
     onUpdateClick() {
-      console.log(this.name);
+      const str = `Name: ${this.name}
+Nickname: ${this.nickname}`;
+
+      alert(str);
     }
   }
 });
@@ -43,7 +54,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .body {
-  margin: 24px 0;
+  margin: 24px 0 36px 0;
+  display: grid;
+  row-gap: 12px;
 }
 
 .button-row {
