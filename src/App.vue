@@ -16,9 +16,11 @@ export default defineComponent({
 
 <style>
 #app {
+  box-sizing: border-box;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 60px 40px;
+  max-width: 800px;
 }
 </style>

@@ -27,6 +27,7 @@ export default defineComponent({
   border-radius: 3px;
   line-height: 1.5rem;
   width: 100%;
-  padding: 0 5px;
+  padding: 3px 0;
+  text-indent: 0.3rem;
 }
 </style>

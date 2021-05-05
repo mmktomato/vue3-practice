@@ -1,12 +1,16 @@
 <template>
   <Header>Profile</Header>
 
-  <Label value="Name" htmlFor="name" />
-  <Input v-model:myValue="name" id="name" />
-  
-  <Button @click="onUpdateClick">
-    Update
-  </Button>
+  <div class="body">
+    <Label value="Name" htmlFor="name" />
+    <Input v-model:myValue="name" id="name" />
+  </div>
+
+  <div class="button-row">
+    <Button @click="onUpdateClick">
+      Update
+    </Button>
+  </div>
 </template>
 
 <script lang="ts">
@@ -36,3 +40,13 @@ export default defineComponent({
   }
 });
 </script>
+
+<style lang="scss" scoped>
+.body {
+  margin: 24px 0;
+}
+
+.button-row {
+  text-align: right;
+}
+</style>
