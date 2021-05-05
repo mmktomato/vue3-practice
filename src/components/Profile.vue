@@ -1,4 +1,6 @@
 <template>
+  <Header>Profile</Header>
+
   <Label value="Name" htmlFor="name" />
   <Input v-model:myValue="name" id="name" />
   
@@ -12,6 +14,7 @@ import { defineComponent } from "vue";
 import Input from "./Input.vue";
 import Label from "./Label.vue";
 import Button from "./Button.vue";
+import Header from "./Header.vue";
 
 export default defineComponent({
   name: "Profile",
@@ -19,6 +22,7 @@ export default defineComponent({
     Input,
     Label,
     Button,
+    Header,
   },
   data() {
     return {
