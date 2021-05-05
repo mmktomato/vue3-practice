@@ -22,9 +22,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use "../css/variables.scss" as v;
+
 .input {
-  border: 1px solid #6f6f6f;
-  border-radius: 3px;
+  border: 1px solid v.$borderColor;
+  border-radius: v.$borderRadius;
   line-height: 1.5rem;
   width: 100%;
   padding: 3px 0;

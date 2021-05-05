@@ -13,12 +13,14 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@use "../css/variables.scss" as v;
+
 .button {
   padding: 7px 10px;
   color: #f1f1f1;
   background: #2eacdd;
-  border: 1px solid #6f6f6f;
-  border-radius: 3px;
+  border: 1px solid v.$borderColor;
+  border-radius: v.$borderRadius;
 
   &:hover {
     opacity: 0.8;
